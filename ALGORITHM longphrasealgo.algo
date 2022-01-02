@@ -1,0 +1,31 @@
+ALGORITHM longphrase
+const:
+point='.';
+espace=' ';
+voyelle='a', 'e', 'i', 'o', 'u', 'y';
+TYPES: 
+CHAR= T[];
+VAR
+    i:integer;
+    num:integer;
+    phrase:string;
+    mots:integer;
+    voyelles:integer;
+    
+BEGIN
+write('ecrire une phrase';".");
+read('phrase')
+
+    WHILE (T[i]<>'.') DO
+        num:=num+1;
+    END_WHILE
+    write(num)
+    WHILE (T[i]<>' ') DO
+        mots:=mots+1;
+    END_WHILE
+write(mots)
+    WHILE (T[i]=voyelle) DO
+        voyelles;=voyelles+1;
+    END_WHILE
+    write(voyelles)
+END
